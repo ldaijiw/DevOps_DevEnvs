@@ -62,7 +62,7 @@ vagrant destroy
 ```bash
 vagrant plugin-install <plugin>
 ```
-	- ``vagrant-hostsupdater`` (Plugin to enable hostname configuration of VM)[https://github.com/agiledivider/vagrant-hostsupdater]
+	- ```vagrant-hostsupdater``` (Plugin to enable hostname configuration of VM)[https://github.com/agiledivider/vagrant-hostsupdater]
 
 ### Linux Commands
 
