@@ -61,4 +61,4 @@ Some companies start to emerge as performing better and delivering faster, as th
 - Environments can be designed for different purposes: Development, Production, Testing etc.
 
 DevOps engineers are tasked with setting up the pipeline to take code from Dev to Testing, to Production environments.
-	- Virtual environments are a useful tool to keep dependencies required by different projects separate and consistent by creating isolated virtual machine/environments for them.
+	- Virtual environments are a useful tool to keep dependencies required by different projects separate and consistent by creating isolated virtual machine/environments for them. (_avoid the issue of "it works on my computer"_)
