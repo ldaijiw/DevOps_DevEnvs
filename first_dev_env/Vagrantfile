@@ -3,7 +3,13 @@
 
 Vagrant.configure("2") do |config|
 
+  # config vagrant box
   config.vm.box = "ubuntu/xenial64"
 
+  # config vm network with ip
+  config.vm.network "private_network", ip: "192.168.10.2"
+
+  # config hostname
+  config.vm.hostname = "daiji.com"
 
 end
