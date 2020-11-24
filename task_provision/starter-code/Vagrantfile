@@ -10,8 +10,9 @@ Vagrant.configure("2") do |config|
 	config.hostsupdater.aliases = ["development.local"]
 
   # upload files to VM
-	config.vm.provision "file", source: "C:\\Users\\daiji\\Desktop\\sparta\\devops_devenvs\\task_provision\\starter-code\\app", destination: "$HOME/startercode/app"
-
-	config.vm.provision "file", source: "C:\\Users\\daiji\\Desktop\\sparta\\devops_devenvs\\task_provision\\starter-code\\environment", destination: "$HOME/startercode/environment"
+	#config.vm.provision "file", source: "C:\\Users\\daiji\\Desktop\\sparta\\devops_devenvs\\task_provision\\starter-code\\app", destination: "$HOME/startercode/app"
+	# config.vm.provision "file", source: "C:\\Users\\daiji\\Desktop\\sparta\\devops_devenvs\\task_provision\\starter-code\\environment", destination: "$HOME/startercode/environment"
+	config.vm.synced_folder "environment/", "/startercode/environment"
+	config.vm.synced_folder "app/", "/startercode/app"
 
 end
