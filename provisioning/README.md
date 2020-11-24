@@ -11,7 +11,6 @@ In the Vagrantfile add to the configuration
 ```ruby
 # upload files to VM
 config.vm.provision "file", source: "C:\\path\\to\\file", destination: "$HOME/new/path"
-
 ```
 **LINUX IS CASE SENSITIVE BUT WINDOWS ISN'T, MAKE SURE PATH STRING IS CORRECT**
 
@@ -20,4 +19,10 @@ Then after reloading with ``vagrant reload``
 Provision the files/folders with
 ```bash
 vagrant provision
+```
+
+### Sync folder with
+
+```ruby
+config.vm.synced_folder "sourcefolder", "destinationfolder"
 ```
