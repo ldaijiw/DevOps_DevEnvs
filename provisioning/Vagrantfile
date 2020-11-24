@@ -1,0 +1,16 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "ubuntu/bionic64"
+
+  # set up private network
+  config.vm.network "private_network", ip: "192.168.10.10"
+
+  # config hostname
+  config.vm.hostname = "daiji.com"
+
+  # alternatively using hostsupdater
+  config.hostsupdater.aliases = ["testing.com", "www.daiji.com"]
+end
